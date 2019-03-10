@@ -3,7 +3,6 @@
 int main() {
 
 int i, somma, vet[3];
-double media;
 
 printf("inserire i numeri == \n");
 for ( i = 0; i < sizeof(vet) / sizeof(int) ; i++) {
@@ -11,7 +10,9 @@ for ( i = 0; i < sizeof(vet) / sizeof(int) ; i++) {
 }
 
 somma = vet[0] + vet[1] + vet[2];
-media = somma / 3;
+
+double media = (double)somma;
+media = media / 3;
 
 printf("Valori iniziali = \n");
 printf("primo = %d \n",vet[0]);
